@@ -1,0 +1,24 @@
+module rgb_pwm (
+    input clock_IN,
+    output reg clock_OUT
+);
+/*
+    50 MHz      / 500 Hz = 100,000       [ratio]
+    100,000     / 2      = 50,000        [duty cycle :: 50%]
+
+    50,000 == 17'b11000011010100000 [17 bit dc reg]
+*/
+reg [16:0] dc;
+
+initial begin
+    clock_OUT = 0;
+end
+
+always@(posedge clock_IN) begin
+    dc <= dc + 1;
+    if (dc == 326) begin
+        clock_OUT <= ~clock_OUT;
+        dc <= 0;
+    end
+end
+endmodule

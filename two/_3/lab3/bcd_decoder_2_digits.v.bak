@@ -1,0 +1,10 @@
+module bcd_decoder_2_digits (
+    input [3:0] in_digit_tens,
+    input [3:0] in_digit_ones,
+    output [7:0] out_digit_tens,
+    output [7:0] out_digit_ones
+);
+
+bcd_decoder_1_digit tens (.bin_in(in_digit_tens), .sseg_out(out_digit_tens));
+bcd_decoder_1_digit ones (.bin_in(in_digit_ones), .sseg_out(out_digit_ones));
+endmodule

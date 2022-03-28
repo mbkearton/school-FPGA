@@ -1,0 +1,85 @@
+# Compile of counter_5b.v was successful.
+# Compile of testbench_counter_5b.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.testbench_counter_5b
+# vsim work.testbench_counter_5b 
+# Start time: 21:07:14 on Feb 03,2021
+# Loading work.testbench_counter_5b
+# Loading work.counter_5b
+add wave -position insertpoint  \
+sim:/testbench_counter_5b/clock \
+sim:/testbench_counter_5b/count \
+sim:/testbench_counter_5b/enable \
+sim:/testbench_counter_5b/i \
+sim:/testbench_counter_5b/reset \
+sim:/testbench_counter_5b/up_down
+run -all
+# [                   0]	Count is:	 1
+# [                   2]	Count is:	 0
+# [                   4]	Count is:	 1
+# [                   6]	Count is:	 2
+# [                   8]	Count is:	 3
+# [                  10]	Count is:	 4
+# [                  12]	Count is:	 5
+# [                  14]	Count is:	 6
+# [                  16]	Count is:	 7
+# [                  18]	Count is:	 8
+# [                  20]	Count is:	 9
+# [                  22]	Count is:	10
+# [                  24]	Count is:	11
+# [                  26]	Count is:	12
+# [                  28]	Count is:	13
+# [                  30]	Count is:	14
+# [                  32]	Count is:	15
+# [                  34]	Count is:	16
+# [                  36]	Count is:	17
+# [                  38]	Count is:	18
+# [                  40]	Count is:	19
+# [                  42]	Count is:	20
+# [                  44]	Count is:	21
+# [                  46]	Count is:	22
+# [                  48]	Count is:	23
+# [                  50]	Count is:	24
+# [                  52]	Count is:	25
+# [                  54]	Count is:	26
+# [                  56]	Count is:	27
+# [                  58]	Count is:	28
+# [                  60]	Count is:	29
+# [                  62]	Count is:	30
+# [                  64]	Count is:	31
+# [                  66]	Count is:	 0
+# [                  68]	Count is:	31
+# [                  70]	Count is:	30
+# [                  72]	Count is:	29
+# [                  74]	Count is:	28
+# [                  76]	Count is:	27
+# [                  78]	Count is:	26
+# [                  80]	Count is:	25
+# [                  82]	Count is:	24
+# [                  84]	Count is:	23
+# [                  86]	Count is:	22
+# [                  88]	Count is:	21
+# [                  90]	Count is:	20
+# [                  92]	Count is:	19
+# [                  94]	Count is:	18
+# [                  96]	Count is:	17
+# [                  98]	Count is:	16
+# [                 100]	Count is:	15
+# [                 102]	Count is:	14
+# [                 104]	Count is:	13
+# [                 106]	Count is:	12
+# [                 108]	Count is:	11
+# [                 110]	Count is:	10
+# [                 112]	Count is:	 9
+# [                 114]	Count is:	 8
+# [                 116]	Count is:	 7
+# [                 118]	Count is:	 6
+# [                 120]	Count is:	 5
+# [                 122]	Count is:	 4
+# [                 124]	Count is:	 3
+# [                 126]	Count is:	 2
+# [                 128]	Count is:	 1
+# [                 130]	Count is:	 0
+# ** Note: $stop    : C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_4/testbench_counter_5b.v(46)
+#    Time: 131 ps  Iteration: 0  Instance: /testbench_counter_5b
+# Break in Module testbench_counter_5b at C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_4/testbench_counter_5b.v line 46

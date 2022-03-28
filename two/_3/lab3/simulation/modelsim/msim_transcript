@@ -1,0 +1,103 @@
+# Reading pref.tcl
+# do lab3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/mux_2_digit_display.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:50 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/mux_2_digit_display.v 
+# -- Compiling module mux_2_digit_display
+# 
+# Top level modules:
+# 	mux_2_digit_display
+# End time: 14:52:50 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/clk_div_DISPLAY.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:50 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/clk_div_DISPLAY.v 
+# -- Compiling module clk_div_DISPLAY
+# 
+# Top level modules:
+# 	clk_div_DISPLAY
+# End time: 14:52:50 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/clk_div_COUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:50 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/clk_div_COUNTER.v 
+# -- Compiling module clk_div_COUNTER
+# 
+# Top level modules:
+# 	clk_div_COUNTER
+# End time: 14:52:50 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/bcd_decoder_2_digits.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:50 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/bcd_decoder_2_digits.v 
+# -- Compiling module bcd_decoder_2_digits
+# 
+# Top level modules:
+# 	bcd_decoder_2_digits
+# End time: 14:52:51 on Jan 28,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/bcd_decoder_1_digit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:51 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/bcd_decoder_1_digit.v 
+# -- Compiling module bcd_decoder_1_digit
+# 
+# Top level modules:
+# 	bcd_decoder_1_digit
+# End time: 14:52:51 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/bcd_99_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:51 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/bcd_99_counter.v 
+# -- Compiling module bcd_99_counter
+# 
+# Top level modules:
+# 	bcd_99_counter
+# End time: 14:52:51 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/DE10_LITE_Golden_Top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:51 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/DE10_LITE_Golden_Top.v 
+# -- Compiling module DE10_LITE_Golden_Top
+# 
+# Top level modules:
+# 	DE10_LITE_Golden_Top
+# End time: 14:52:51 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/controller_clk_pov.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:51 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/controller_clk_pov.v 
+# -- Compiling module controller_clk_pov
+# 
+# Top level modules:
+# 	controller_clk_pov
+# End time: 14:52:52 on Jan 28,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3 {C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/fake_SSEG_4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:52 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3" C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_3/lab3/fake_SSEG_4.v 
+# -- Compiling module fake_SSEG_4
+# 
+# Top level modules:
+# 	fake_SSEG_4
+# End time: 14:52:52 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

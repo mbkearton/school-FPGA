@@ -1,0 +1,22 @@
+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/testbench_UART_TX.v {1 {vlog -work work -stats=none C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/testbench_UART_TX.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbench_UART_TX
+
+Top level modules:
+	testbench_UART_TX
+
+} {} {}} C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/UART_transmitter.v {1 {vlog -work work -stats=none C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/UART_transmitter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module UART_transmitter
+
+Top level modules:
+	UART_transmitter
+
+} {} {}} C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/clock_divider_UART.v {1 {vlog -work work -stats=none C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/clock_divider_UART.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_divider_UART
+
+Top level modules:
+	clock_divider_UART
+
+} {} {}}

@@ -1,0 +1,8 @@
+C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/testbench_UART_RX.v {1 {vlog -work work -stats=none C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/testbench_UART_RX.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbench_UART_RX
+
+Top level modules:
+	testbench_UART_RX
+
+} {} {}}

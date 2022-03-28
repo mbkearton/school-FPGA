@@ -1,0 +1,16 @@
+module clk_div_LED
+(
+    input clock_IN,
+    output clock_OUT
+);
+/*
+    50 MHz / 1000 Hz = 50000
+    50000 / 2 = 25000
+*/
+parameter DC_MAX = 12500;
+reg [15:0] dc;
+
+always@(posedge clock_IN) dc <= (dc < DC_MAX) ? dc + 1 : 0;
+assign clock_OUT = (dc < DC_MAX) ? clock_OUT : ~clock_OUT;
+
+endmodule

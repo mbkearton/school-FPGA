@@ -1,0 +1,11 @@
+module controller_clk_pov (
+	input clk,
+	output mux_clk,
+	output anode0,
+	output anode1	
+);
+
+assign mux_clk = clk;
+assign anode0 = (posedge clock) ? 1'bz : 1'b1;
+assign anode1 = (posedge clock) ? 1'b1 : 1'bz
+endmodule

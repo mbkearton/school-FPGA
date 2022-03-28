@@ -1,0 +1,8 @@
+module mux_2_digit_display (
+    input sel,
+    input [7:0] tens,
+    input [7:0] ones,
+    output [7:0] cathodes
+);
+assign cathodes = sel ? tens : ones;
+endmodule

@@ -1,0 +1,31 @@
+module blink_controller
+(
+    input clock_IN,
+    input pwm,
+    input [6:0] count,
+    input [6:0] pwm_dc,
+    input up,
+    output reg [2:0] color
+);
+parameter RED = 3'011;
+parameter GREEN = 3'101;
+parameter BLUE = 3'b110;
+
+initial
+begin
+    color = RED;
+end
+
+always@(posedge clock_IN)
+begin
+    if (pwm_dc == 1 && !up)
+    begin
+        case(color)
+            RED: color <= BLUE;
+            BLUE: color <= GREEN;
+            GREEN: color <= RED;
+        endcase
+    end
+end
+
+endmodule

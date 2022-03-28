@@ -1,0 +1,33 @@
+module UART_transmitter_charlimiter (
+    input       clock,
+    input       serial_IN,
+    output reg  serial_OUT
+);
+reg [2:0] character_count;
+reg [3:0] tx_cycle_count;
+
+reg tx_flag;
+
+always@(posedge clock) begin
+    //  reset count and tx_flag if count has been reached
+    if (count >= 5)    begin
+        tx_flag <= 0;
+        count <= 0;
+    end
+
+    //  if serial_IN and count are both 0, set the transmission flag
+    if (!serial_IN && !count)  begin
+        tx_flag <= 1;
+    end
+
+    //  while the flag is high, pass along the signal and increment count
+    if (tx_flag)    begin
+        if (tx_cycle_count < 12)    begin
+            serial_OUT <= serial_IN;
+        end
+        count <= count + 1;
+    end
+
+end
+
+endmodule

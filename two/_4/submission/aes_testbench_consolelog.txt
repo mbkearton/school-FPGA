@@ -1,0 +1,105 @@
+# Compile of aes_cipher_top.v was successful.
+# Compile of aes_inv_cipher_top.v was successful.
+# Compile of aes_inv_sbox.v was successful.
+# Compile of aes_key_expand_128.v was successful.
+# Compile of aes_rcon.v was successful.
+# Compile of aes_sbox.v was successful.
+# Compile of timescale.v was successful.
+# Compile of lab4_aes_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim work.lab4_aes_tb
+# vsim work.lab4_aes_tb 
+# Start time: 19:50:15 on Feb 04,2021
+# Loading work.lab4_aes_tb
+# Loading work.aes_inv_cipher_top
+# Loading work.aes_key_expand_128
+# Loading work.aes_sbox
+# Loading work.aes_rcon
+# Loading work.aes_inv_sbox
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /lab4_aes_tb File: C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_4/lab4_aes_tb.v Line: 48
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /lab4_aes_tb File: C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_4/lab4_aes_tb.v Line: 52
+run -all
+# KEY:	2f791da0c6c5b42f4fd04785a3170653
+# Yeah, yeah, yeah, yeah, yeah
+# 
+# Yeah, yeah, yeah, yeah, yeah, yeah
+# 
+# I think I did it again
+# 
+# I made you believe we're more than just friends
+# 
+# Oh, baby
+# 
+# It might seem like a crush
+# 
+# But it doesn't mean that I'm serious
+# 
+# 'Cause to lose all my senses
+# 
+# That is just so typically me
+# 
+# Oh, baby, baby
+# 
+# [Chorus:]
+# 
+# Oops!... I did it again
+# 
+# I played with your heart, got lost in the game
+# 
+# Oh, baby, baby
+# 
+# Oops!... You think I'm in love
+# 
+# That I'm sent from above
+# 
+# I'm not that innocent
+# 
+# You see my problem is this
+# 
+# I'm dreaming away
+# 
+# Wishing that heroesâthey truly exist
+# 
+# I cry watching the days
+# 
+# Can't you see I'm a fool in so many ways
+# 
+# But to lose all my senses
+# 
+# That is just so typically me
+# 
+# Baby, oh
+# 
+# [Chorus]
+# 
+# Yeah, yeah, yeah, yeah, yeah, yeah
+# 
+# Yeah, yeah, yeah, yeah, yeah, yeah
+# 
+# "All aboard"
+# 
+# "Britney, before you go, there's something I want you to have."
+# 
+# "Oh, it's beautiful, but wait a minute, isn't this..?"
+# 
+# "Yeah, yes it is."
+# 
+# "But I thought the old lady dropped it into the ocean in the end."
+# 
+# "Well, baby, I went down and got it for you."
+# 
+# "Oh, you shouldn't have."
+# 
+# Oops!... I did it again to your heart
+# 
+# Got lost in this game, oh, baby
+# 
+# Oops!... You think that I'm sent from above
+# 
+# I'm not that innocent      
+# ** Note: $stop    : C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_4/lab4_aes_tb.v(74)
+#    Time: 3954 ps  Iteration: 0  Instance: /lab4_aes_tb
+# Break in Module lab4_aes_tb at C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_4/lab4_aes_tb.v line 74
+

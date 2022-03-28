@@ -1,0 +1,31 @@
+module updown_counter
+(
+    input clock_IN, // 500 Hz in
+    output reg [6:0] count,
+    output reg [6:0] pwm_dc_OUT
+    output reg       up;
+);
+
+always@(posedge clock_IN)
+begin
+    if (&count)
+    begin
+        count <= 0;
+        if (&pwm_dc_OUT && up)
+        begin
+            up <= 0;
+            pwm_dc_OUT <= pwm_dc_OUT - 1;
+        end
+        else if (!pwm_dc_OUT && !up)
+        begin
+            up <= 1;
+            pwm_dc_OUT <= pwm_dc_OUT + 1;
+        end
+        else
+            pwm_dc_OUT <= up ? pwm_dc_OUT + 1 : pwm_dc_OUT - 1;
+    end
+     else
+         count <= count + 1;
+end
+
+endmodule

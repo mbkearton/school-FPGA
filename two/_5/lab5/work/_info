@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_4
+vclock_divider_UART
+Z0 !s110 1613435347
+!i10b 1
+!s100 3j:O8Kd05YbV3ES]liaRI1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IWc9iRH>iKfdzTFE5`M?Mk0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5
+w1613081572
+8C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/clock_divider_UART.v
+FC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/clock_divider_UART.v
+!i122 105
+L0 1 27
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1613435347.000000
+!s107 C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/clock_divider_UART.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/clock_divider_UART.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+nclock_divider_@u@a@r@t
+vtestbench_UART_TX
+!s110 1613435348
+!i10b 1
+!s100 c<Yh9cVgE_:]Z^C4i1X[B2
+R1
+IWcGJVL=Hdi]M:Z^cFfini1
+R2
+R3
+w1613435340
+8C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/testbench_UART_TX.v
+FC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/testbench_UART_TX.v
+!i122 107
+L0 1 50
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/testbench_UART_TX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/testbench_UART_TX.v|
+!i113 1
+R6
+R7
+ntestbench_@u@a@r@t_@t@x
+vUART_transmitter
+R0
+!i10b 1
+!s100 IWF9>30i@KCJH=AClIG^81
+R1
+I>P`A589jYJboV5];UPemT0
+R2
+R3
+w1613435236
+8C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/UART_transmitter.v
+FC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/UART_transmitter.v
+!i122 106
+L0 1 88
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/UART_transmitter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_5/lab5/UART_transmitter.v|
+!i113 1
+R6
+R7
+n@u@a@r@t_transmitter

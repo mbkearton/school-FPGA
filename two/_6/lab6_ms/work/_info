@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vtestbench_UART_RX
+Z0 !s110 1613773453
+!i10b 1
+!s100 MiY`U6`K3jd>o[4aAigcF3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ie7]eaYlJ1LF7`d3Zb^_f70
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms
+w1613772574
+8C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/testbench_UART_RX.v
+FC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/testbench_UART_RX.v
+!i122 28
+L0 1 77
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1613773453.000000
+!s107 C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/testbench_UART_RX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/testbench_UART_RX.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+ntestbench_@u@a@r@t_@r@x
+vUART_receiver
+R0
+!i10b 1
+!s100 FQWSYgNPz7iUa_VSaLMPD1
+R1
+I0LYCiNzXD;HXRma;NDO803
+R2
+R3
+w1613773439
+8C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/UART_receiver.v
+FC:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/UART_receiver.v
+!i122 29
+L0 1 147
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/UART_receiver.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2021/Winter/cst-231/labs/_6/lab6_ms/UART_receiver.v|
+!i113 1
+R6
+R7
+n@u@a@r@t_receiver

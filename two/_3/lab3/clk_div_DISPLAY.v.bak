@@ -1,0 +1,25 @@
+    module clk_div_DISPLAY (
+    input   in_clk,
+    output  out_clk
+);
+/*
+    Speed of clock display may need to change if more digits are being
+    driven by this clock. Generally, double speed when driving more
+    digits; halve speed when driving fewer digits.
+
+    500 Hz to drive display of 2-3 digits
+
+    50 MHz  / 500 Hz  =  100 KHz     [ratio]
+    100 KHz / 2       =  50,000  Hz  [duty cycle]
+*/
+reg [15:0] dc;   // 16 bits to hold  50 KHz duty cycle
+
+always@(posedge in_clk) begin
+
+    dc <= dc + 1;
+    if (dc == 50000) begin
+        out_clk <= ~out_clk;
+        dc <= 0;
+    end
+end
+endmodule

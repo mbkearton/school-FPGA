@@ -1,0 +1,289 @@
+# Reading C:/altera/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do aes_testbench_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/kevyn/Desktop/aes_testbench {C:/Users/kevyn/Desktop/aes_testbench/timescale.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:24:02 on Feb 06,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kevyn/Desktop/aes_testbench" C:/Users/kevyn/Desktop/aes_testbench/timescale.v 
+# End time: 17:24:02 on Feb 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kevyn/Desktop/aes_testbench {C:/Users/kevyn/Desktop/aes_testbench/aes_sbox.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:24:02 on Feb 06,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kevyn/Desktop/aes_testbench" C:/Users/kevyn/Desktop/aes_testbench/aes_sbox.v 
+# -- Compiling module aes_sbox
+# 
+# Top level modules:
+# 	aes_sbox
+# End time: 17:24:02 on Feb 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kevyn/Desktop/aes_testbench {C:/Users/kevyn/Desktop/aes_testbench/aes_rcon.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:24:02 on Feb 06,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kevyn/Desktop/aes_testbench" C:/Users/kevyn/Desktop/aes_testbench/aes_rcon.v 
+# -- Compiling module aes_rcon
+# 
+# Top level modules:
+# 	aes_rcon
+# End time: 17:24:02 on Feb 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kevyn/Desktop/aes_testbench {C:/Users/kevyn/Desktop/aes_testbench/aes_key_expand_128.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:24:02 on Feb 06,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kevyn/Desktop/aes_testbench" C:/Users/kevyn/Desktop/aes_testbench/aes_key_expand_128.v 
+# -- Compiling module aes_key_expand_128
+# 
+# Top level modules:
+# 	aes_key_expand_128
+# End time: 17:24:02 on Feb 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kevyn/Desktop/aes_testbench {C:/Users/kevyn/Desktop/aes_testbench/aes_cipher_top.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:24:02 on Feb 06,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kevyn/Desktop/aes_testbench" C:/Users/kevyn/Desktop/aes_testbench/aes_cipher_top.v 
+# -- Compiling module aes_cipher_top
+# 
+# Top level modules:
+# 	aes_cipher_top
+# End time: 17:24:03 on Feb 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.aes_cipher_top
+# vsim work.aes_cipher_top 
+# Start time: 17:24:23 on Feb 06,2017
+# Loading work.aes_cipher_top
+# Loading work.aes_key_expand_128
+# Loading work.aes_sbox
+# Loading work.aes_rcon
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/aes_cipher_top/clk
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -position end  sim:/aes_cipher_top/done
+add wave -position end  sim:/aes_cipher_top/key
+add wave -position end  sim:/aes_cipher_top/rst
+force -freeze sim:/aes_cipher_top/rst 1 0
+add wave -position end  sim:/aes_cipher_top/ld
+force -freeze sim:/aes_cipher_top/ld 0 0
+add wave -position end  sim:/aes_cipher_top/key
+add wave -position end  sim:/aes_cipher_top/text_out
+add wave -position 6  sim:/aes_cipher_top/text_in
+force -freeze sim:/aes_cipher_top/text_in 128'h2B7E151628AED2A6ABF7158809CF4F3C 0
+force -freeze sim:/aes_cipher_top/key 128'h2B7E151628AED2A6ABF7158809CF4F3C 0
+run
+run
+force -freeze sim:/aes_cipher_top/done 0 0
+run
+run
+force -freeze sim:/aes_cipher_top/text_out 0 0
+run
+run
+run
+noforce sim:/aes_cipher_top/text_out
+run
+run
+run
+noforce sim:/aes_cipher_top/done
+run
+run
+run
+force -freeze sim:/aes_cipher_top/rst 0 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/aes_cipher_top/rst 1 0
+force -freeze sim:/aes_cipher_top/ld 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/aes_cipher_top/ld 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/aes_cipher_top/done
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:28:44 on Feb 06,2017, Elapsed time: 0:04:21
+# Errors: 0, Warnings: 0
