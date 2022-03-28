@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/simulation/modelsim
+vDE10_LITE_Golden_Top
+Z1 !s110 1607223579
+!i10b 1
+!s100 4QO[;no1hEUHQQU>93CIT1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]zdQf7gOg?PhZNiEzOC031
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1607217817
+8C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/DE10_LITE_Golden_Top.v
+FC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/DE10_LITE_Golden_Top.v
+!i122 1
+L0 29 117
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1607223579.000000
+!s107 C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/DE10_LITE_Golden_Top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7|C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/DE10_LITE_Golden_Top.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7
+Z8 tCvgOpt 0
+n@d@e10_@l@i@t@e_@golden_@top
+vtraffic_controller
+R1
+!i10b 1
+!s100 @5P37fHRE>bzbJA6AVCgI3
+R2
+I62Z7I9HD?^NB0bmb<JBUi3
+R3
+R0
+w1607156300
+8C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v
+FC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v
+!i122 0
+L0 1 94
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7|C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v|
+!i113 1
+R6
+R7
+R8

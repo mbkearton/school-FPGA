@@ -1,0 +1,27 @@
+# Current time Sat Oct 31 15:08:56 2020
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 00590c9c. Traceback:
+# 0    0x00590c9c: 'WinMain + 0x3790c'
+# 1    0x0056d440: 'WinMain + 0x140b0'
+# 2    0x005823fb: 'WinMain + 0x2906b'
+# 3    0x005ebf4f: 'WinMain + 0x92bbf'
+# 4    0x005e88b0: 'WinMain + 0x8f520'
+# 5    0x005e8691: 'WinMain + 0x8f301'
+# 6    0x5ab7653b: 'TclServiceIdle + 0x4b'
+# 7    0x5a84db5b: 'Tk_MainLoop + 0x1b'
+# 8    0x5a882196: 'Tk_MainEx + 0x906'
+# 9    0x0055b0e8: 'WinMain + 0x1d58'
+# 10   0x0055d6e5: 'WinMain + 0x4355'
+# 11   0x009b0d5f: 'EnumFormsA + 0x207'
+# 12   0x766efa29: 'BaseThreadInitThunk + 0x19'
+# 13   0x776875f4: 'RtlGetAppContainerNamedObjectPath + 0xe4'
+# 14   0x776875c4: 'RtlGetAppContainerNamedObjectPath + 0xb4'
+StackWalk failed 0
+# End of Stack Trace
+

@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vtraffic_controller
+!s110 1607228645
+!i10b 1
+!s100 Y_lfjY[76lEX3S`X:@c471
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I4QdjbcAzjgk@;BI[m2Z9W3
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7
+w1607228639
+8C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v
+FC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v
+!i122 2
+L0 1 97
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1607228645.000000
+!s107 C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v|
+!i113 1
+o-work work
+tCvgOpt 0

@@ -1,0 +1,18 @@
+# Compile of majority.v was successful.
+vsim work.majority3
+# vsim work.majority3 
+# Start time: 10:36:37 on Dec 09,2020
+# Loading work.majority3
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/majority3/x1
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern clock -initialvalue 0 -period 25ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/majority3/x2
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 25ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/majority3/x1
+wave create -driver freeze -pattern clock -initialvalue 0 -period 25ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/majority3/x1
+wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/majority3/x2
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/majority3/x3
+add wave -position insertpoint  \
+sim:/majority3/f
+run -all
+quit -sim
+# End time: 10:45:07 on Dec 09,2020, Elapsed time: 0:08:30
+# Errors: 0, Warnings: 5

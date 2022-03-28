@@ -33,3 +33,4 @@
 
 # FPGA / Quartus / ModelSim
 *.wlf
+.zip

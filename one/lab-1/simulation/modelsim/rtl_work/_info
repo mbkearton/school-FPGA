@@ -1,0 +1,35 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-1/simulation/modelsim
+vfulladder
+!s110 1601433346
+!i10b 1
+!s100 ]ZBTm5505z?FW[]J]a[XQ3
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+II`a?GX>oLOQFz95K7[]VF3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1601432646
+8C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-1/fulladder.v
+FC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-1/fulladder.v
+!i122 0
+L0 3 14
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1601433346.000000
+!s107 C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-1/fulladder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-1|C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-1/fulladder.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-1
+tCvgOpt 0

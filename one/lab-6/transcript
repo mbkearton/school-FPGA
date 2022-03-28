@@ -1,0 +1,136 @@
+# Compile of bcd_count.v was successful.
+# Compile of bcd_decoder.v was successful.
+# Compile of shift_reg.v was successful.
+# Compile of sync_counter.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.shift_reg
+# vsim work.shift_reg 
+# Start time: 17:46:43 on Dec 06,2020
+# Loading work.shift_reg
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 50ps -dutycycle 50 -starttime 0ps -endtime 2000ps sim:/shift_reg/clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 0ps -endtime 2000ps sim:/shift_reg/D
+add wave -position end -format Logic -height 17 -editable 2 Edit:/shift_reg/clock
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/shift_reg/l_r
+add wave -position end -autoscale 1 -format Literal -height 17 -editable 2 Edit:/shift_reg/D
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/shift_reg/load
+add wave -position end -autoscale 1 -format Literal -height 17 -editable 2 Edit:/shift_reg/D
+add wave -position insertpoint  \
+sim:/shift_reg/Q
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mbkea  Hostname: DESKTOP-MET185R  ProcessID: 62844
+#           Attempting to use alternate WLF file "./wlft7gz6am".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7gz6am
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/shift_reg/reset
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/shift_reg/reset
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 2000ps sim:/shift_reg/sin
+add wave -position 4 -format Logic -height 17 -editable 2 Edit:/shift_reg/sin
+add wave -position insertpoint  \
+sim:/shift_reg/sout
+run -all
+wave edit change_value -start 225ps -end 2000ps -value 0 Edit:/shift_reg/sin
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+restart -f
+run -all
+wave edit invert -start 475ps -end 525ps Edit:/shift_reg/load
+wave edit change_value -start 463ps -end 536ps -value 0 Edit:/shift_reg/load
+wave edit change_value -start 0ps -end 2000ps -value 1 Edit:/shift_reg/l_r
+restart -f
+run -all
+restart -f
+wave edit change_value -start 0ps -end 2000ps -value 0 Edit:/shift_reg/l_r
+wave edit change_value -start 0ps -end 258ps -value 0 Edit:/shift_reg/sin
+wave edit change_value -start 25ps -end 75ps -value 1 Edit:/shift_reg/load
+wave edit change_value -start 25ps -end 75ps -value 1111 Edit:/shift_reg/D
+wave edit invert -start 125ps -end 175ps Edit:/shift_reg/reset
+run -all
+quit -sim
+# End time: 18:20:31 on Dec 06,2020, Elapsed time: 0:33:48
+# Errors: 0, Warnings: 1
+vsim work.sync_counter
+# vsim work.sync_counter 
+# Start time: 18:20:36 on Dec 06,2020
+# Loading work.sync_counter
+wave create -driver freeze -pattern clock -initialvalue {Not Logged} -period 50ps -dutycycle 50 -starttime 0ps -endtime 2000ps sim:/sync_counter/clock
+wave create -driver freeze -pattern constant -value 0000 -range 7 0 -starttime 0ps -endtime 2000ps sim:/sync_counter/D
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/sync_counter/load
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/sync_counter/load
+add wave -position insertpoint  \
+sim:/sync_counter/Q
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mbkea  Hostname: DESKTOP-MET185R  ProcessID: 62844
+#           Attempting to use alternate WLF file "./wlftxf1qkx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxf1qkx
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 2000ps sim:/sync_counter/reset
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/sync_counter/reset
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/sync_counter/up_down
+add wave -position 3 -format Logic -height 17 -editable 2 Edit:/sync_counter/up_down
+run -all
+wave edit extend -extend to -time 12750ps
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+wave edit extend -extend by -time 100ps
+restart -f
+run -all
+wave edit extend -extend by -time 100ps
+restart -f
+run -all
+restart -f
+wave edit change_value -start 0ps -end 12950ps -value 1 Edit:/sync_counter/up_down
+run -all
+restart -f
+wave edit change_value -start 23ps -end 75ps -value 1 Edit:/sync_counter/load
+wave edit change_value -start 24ps -end 74ps -value 11111111 Edit:/sync_counter/D
+wave edit invert -start 74ps -end 124ps Edit:/sync_counter/reset
+run -all
+restart -f
+wave edit change_value -start 0ps -end 132ps -value 0 Edit:/sync_counter/reset
+wave edit change_value -start 0ps -end 139ps -value 1 Edit:/sync_counter/reset
+wave edit change_value -start 13ps -end 90ps -value 0 Edit:/sync_counter/load
+wave edit change_value -start 2ps -end 106ps -value 0 Edit:/sync_counter/D
+wave edit invert -start 0ps -end 40ps Edit:/sync_counter/load
+wave edit change_value -start 0ps -end 40ps -value 11111111 Edit:/sync_counter/D
+wave edit invert -start 50ps -end 100ps Edit:/sync_counter/reset
+run -all
+restart -f
+quit -sim
+# End time: 18:44:56 on Dec 06,2020, Elapsed time: 0:24:20
+# Errors: 0, Warnings: 1
+vsim work.bcd_count
+# vsim work.bcd_count 
+# Start time: 18:45:02 on Dec 06,2020
+# Loading work.bcd_count
+wave create -driver freeze -pattern clock -initialvalue 1 -period 50ps -dutycycle 50 -starttime 0ps -endtime 2000ps sim:/bcd_count/clk
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/bcd_count/cen
+add wave -position insertpoint  \
+sim:/bcd_count/Q
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mbkea  Hostname: DESKTOP-MET185R  ProcessID: 62844
+#           Attempting to use alternate WLF file "./wlftnm1w4c".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnm1w4c
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 2000ps sim:/bcd_count/reset
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/bcd_count/reset
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 2000ps sim:/bcd_count/up_down
+add wave -position 4 -format Logic -height 17 -editable 2 Edit:/bcd_count/cen
+run -all
+wave edit invert -start 725ps -end 775ps Edit:/bcd_count/reset
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+wave edit change_value -start 707ps -end 792ps -value 0 Edit:/bcd_count/reset
+wave edit change_value -start 659ps -end 826ps -value 1 Edit:/bcd_count/reset
+run -all
+wave edit invert -start 225ps -end 377ps Edit:/bcd_count/cen
+restart -f
+run -all
+restart -f
+wave edit change_value -start 0ps -end 2000ps -value 0 Edit:/bcd_count/up_down
+run -all
+quit -sim
+# End time: 19:00:43 on Dec 06,2020, Elapsed time: 0:15:41
+# Errors: 0, Warnings: 1

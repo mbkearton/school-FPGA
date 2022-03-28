@@ -1,0 +1,54 @@
+# Compile of traffic_controller.v was successful.
+vsim work.traffic_controller
+# vsim work.traffic_controller 
+# Start time: 20:03:48 on Dec 05,2020
+# Loading work.traffic_controller
+add wave -position insertpoint  \
+sim:/traffic_controller/clock
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/traffic_controller/clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/traffic_controller/reset
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/traffic_controller/reset
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/traffic_controller/sensor
+add wave -position insertpoint  \
+sim:/traffic_controller/frm_light
+add wave -position insertpoint  \
+sim:/traffic_controller/hwy_light
+run -all
+wave edit change_value -start 0ps -end 1000ps -value 0 Edit:/traffic_controller/reset
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+wave edit invert -start 39ps -end 1000ps Edit:/traffic_controller/reset
+restart -f
+run -all
+wave edit invert -start 500ps -end 1000ps Edit:/traffic_controller/sensor
+restart -f
+run -all
+add wave -position insertpoint  \
+sim:/traffic_controller/count
+restart -f
+run -all
+add wave -position insertpoint  \
+sim:/traffic_controller/state
+restart -f
+run -all
+# Compile of traffic_controller.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.traffic_controller
+run -all
+wave edit invert -start 0ps -end 87ps Edit:/traffic_controller/reset
+restart -f
+run -all
+wave edit extend -extend to -time 2000ps
+restart -f
+run -all
+# Compile of traffic_controller.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.traffic_controller
+run -all
+# End time: 20:33:56 on Dec 05,2020, Elapsed time: 0:30:08
+# Errors: 0, Warnings: 1
+# Closing project C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/lab7.mpf

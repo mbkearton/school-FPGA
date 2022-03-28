@@ -1,0 +1,82 @@
+# Reading pref.tcl
+# do lab-7_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7 {C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:39 on Dec 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7" C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v 
+# -- Compiling module traffic_controller
+# 
+# Top level modules:
+# 	traffic_controller
+# End time: 18:59:39 on Dec 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7 {C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/DE10_LITE_Golden_Top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:39 on Dec 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7" C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/DE10_LITE_Golden_Top.v 
+# -- Compiling module DE10_LITE_Golden_Top
+# 
+# Top level modules:
+# 	DE10_LITE_Golden_Top
+# End time: 18:59:39 on Dec 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.traffic_controller
+# vsim work.traffic_controller 
+# Start time: 18:59:46 on Dec 05,2020
+# Loading work.traffic_controller
+vsim work.traffic_controller
+# End time: 19:00:09 on Dec 05,2020, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 0
+# vsim work.traffic_controller 
+# Start time: 19:00:09 on Dec 05,2020
+# Loading work.traffic_controller
+wave create -driver freeze -pattern clock -initialvalue {Not Logged} -period 50ps -dutycycle 50 -starttime 0ps -endtime 3200ps sim:/traffic_controller/clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# traffic_controller
+wave create -driver freeze -pattern clock -initialvalue {Not Logged} -period 100ps -dutycycle 50 -starttime 0ps -endtime 3200ps sim:/traffic_controller/clock
+# traffic_controller
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 3200ps sim:/traffic_controller/reset
+# traffic_controller
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/traffic_controller/reset
+wave edit change_value -start 0ps -end 75ps -value 0 Edit:/traffic_controller/reset
+wave edit change_value -start 0ps -end 138ps -value 1 Edit:/traffic_controller/reset
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 3200ps sim:/traffic_controller/sensor
+# traffic_controller
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/traffic_controller/sensor
+add wave -position end -format Logic -height 17 -editable 2 Edit:/traffic_controller/sensor
+add wave -position insertpoint  \
+sim:/traffic_controller/hwy_light
+add wave -position insertpoint  \
+sim:/traffic_controller/frm_light
+wave edit change_value -start 0ps -end 175ps -value 1 Edit:/traffic_controller/sensor
+run -all
+add wave -position insertpoint  \
+sim:/traffic_controller/count
+restart -f
+run -all
+add wave -position insertpoint  \
+sim:/traffic_controller/state
+restart -f
+add wave -position insertpoint  \
+sim:/traffic_controller/next
+add wave -position insertpoint  \
+sim:/traffic_controller/state
+restart -f
+run -all
+wave edit change_value -start 0ps -end 75ps -value 0 Edit:/traffic_controller/reset
+restart -f
+run -all
+quit
+# End time: 20:02:06 on Dec 05,2020, Elapsed time: 1:01:57
+# Errors: 0, Warnings: 0

@@ -1,0 +1,32 @@
+module shift_reg (
+    input             reset,
+    input             clock,
+    input             sin,
+    input             l_r,
+    input             load,
+    input      [3:0]  D,
+    output reg [3:0]  Q,
+    output reg        sout
+);
+
+initial begin
+    sout = 1'b0;
+    Q = 4'd0;
+end
+
+always@(posedge clock or negedge reset) begin  // asynchronous reset
+    if (~reset) {Q,sout} <= 5'd0;   //  reset == 0, clear all registers
+    else if (load) Q <= D;          //  load == 1;  parallel load
+    else if (l_r) begin             //  load == 0;  l_r == 1; shift left
+        Q[3:1] <= Q[2:0];
+        Q[0] <= sin;
+        sout <= Q[3];
+    end
+    else begin                      //  load == 0;  l_r == 0; shift right
+        Q[2:0] <= Q[3:1];
+        Q[3] <= sin;
+        sout <= Q[0];
+    end
+end
+
+endmodule

@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vmajority3
+!s110 1607538985
+!i10b 1
+!s100 j0:bjCjZ5fH2PQfNd<DFN2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IBhzc7^5j3bE=`7<];K87z3
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-0
+w1607537905
+8C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-0/majority.v
+FC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-0/majority.v
+!i122 0
+L0 1 9
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1607538985.000000
+!s107 C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-0/majority.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-0/majority.v|
+!i113 1
+o-work work
+tCvgOpt 0

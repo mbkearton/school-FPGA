@@ -1,0 +1,8 @@
+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v {1 {vlog -work work -stats=none C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-7/traffic_controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module traffic_controller
+
+Top level modules:
+	traffic_controller
+
+} {} {}}

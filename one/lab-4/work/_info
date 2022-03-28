@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-3/lab3_decoder
+vbcd_adder
+!s110 1603934058
+!i10b 1
+!s100 mac38fe4:bC=9R6eVhm1?0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVUeUI=2jkCUo7MHJY4T7L1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4
+w1603934043
+8C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_adder.v
+FC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_adder.v
+!i122 11
+L0 1 14
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1603934058.000000
+!s107 C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbcd_to_seven
+!s110 1603934059
+!i10b 1
+!s100 2jHcbSiac?Z9@U`YMdbS13
+R0
+ILo>M]:ZiLJ?nRa?f>?VTE1
+R1
+R2
+w1603852048
+8C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_to_seven.v
+FC:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_to_seven.v
+!i122 12
+L0 1 27
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_to_seven.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-4/bcd_to_seven.v|
+!i113 1
+R5
+R6

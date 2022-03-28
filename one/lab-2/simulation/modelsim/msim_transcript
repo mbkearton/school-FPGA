@@ -1,0 +1,50 @@
+# Reading pref.tcl
+# do lab2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2 {C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2/mux2_1b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:37:50 on Oct 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2" C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2/mux2_1b.v 
+# -- Compiling module mux2_1b
+# 
+# Top level modules:
+# 	mux2_1b
+# End time: 19:37:50 on Oct 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2 {C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2/mux2_4b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:37:50 on Oct 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2" C:/Users/mbkea/Documents/_OIT/2020/Fall/cst-133/labs/lab-2/mux2_4b.v 
+# -- Compiling module mux2_4b
+# 
+# Top level modules:
+# 	mux2_4b
+# End time: 19:37:51 on Oct 13,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.mux2_4b
+# vsim work.mux2_4b 
+# Start time: 19:38:07 on Oct 13,2020
+# Loading work.mux2_4b
+# Loading work.mux2_1b
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 50ps -step 1 -repeat 2 -range 3 0 -starttime 0ps -endtime 800ps sim:/mux2_4b/B
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Down -period 50ps -step 1 -repeat 2 -range 3 0 -starttime 0ps -endtime 800ps sim:/mux2_4b/A
+# In Range Down Counter: End value cannot be greater than Start value
+wave create -driver freeze -pattern counter -startvalue 1111 -endvalue 0000 -type Range -direction Down -period 50ps -step 1 -repeat 2 -range 3 0 -starttime 0ps -endtime 800ps sim:/mux2_4b/A
+add wave -position insertpoint  \
+sim:/mux2_4b/M
+wave create -driver freeze -pattern clock -initialvalue 0 -period 800ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/mux2_4b/SEL
+# Load canceled
+run -all
+# End time: 18:18:26 on Oct 14,2020, Elapsed time: 22:40:19
+# Errors: 0, Warnings: 0
